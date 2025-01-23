@@ -1,2 +1,3 @@
-# website-restaurant
-html css javascript bootstrap responsive website
+# Restaurant-website
+Responsive website made with html css bootstrap and javascript & javascript libraries 
+
