@@ -101,13 +101,6 @@
     this.classList.toggle('bi-x')
   })
 
-  // on('click', '.navbar .dropdown > a', function(e) {
-  //   if (select('#navbar').classList.contains('navbar-mobile')) {
-  //     e.preventDefault()
-  //     this.nextElementSibling.classList.toggle('dropdown-active')
-  //   }
-  // }, true)
-
   /* Scroll with offset on links with a class name .scrollto */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -171,16 +164,7 @@
 
   });
 
-  /**
-   * Initiate glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
-   * Events slider
-   */
+  /* Events slider */
   new Swiper('.events-slider', {
     speed: 600,
     loop: true,
@@ -196,9 +180,7 @@
     }
   });
 
-  /**
-   * Testimonials slider
-   */
+  /* Testimonials slider */
   new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
@@ -225,16 +207,12 @@
     }
   });
 
-  /**
-   * Initiate gallery lightbox 
-   */
+  /* Initiate gallery lightbox */
   const galleryLightbox = GLightbox({
     selector: '.gallery-lightbox'
   });
 
-  /**
-   * Animation on scroll
-   */
+  /* Animation on scroll */
   window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
